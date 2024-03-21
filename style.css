@@ -71,7 +71,8 @@ body {
     padding: 20px;
     display: none;
 }
-.mylearning:hover .mylearning__popup{
+
+.mylearning:hover .mylearning__popup {
     display: block;
 }
 
@@ -87,6 +88,15 @@ body {
     color: white;
     padding: 10px;
     border-radius: 20px;
+    cursor: pointer;
+    border:solid #A335F0 2px;
+}
+
+.catagories p:hover{
+    transition: 1s;
+    background-color: transparent;
+    color: black;
+    border:solid #A335F0 2px;
 }
 
 .sale-image {
@@ -106,6 +116,22 @@ body {
     position: absolute;
     bottom: 250px;
     left: 50px;
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 .recommanded {
